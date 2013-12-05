@@ -6,7 +6,7 @@ Source files can be found [here](http://www.dpi.inpe.br/prodesdigital/dadosn/mos
 
 This repository offers a Spatialite package of all deforestation vetorial data from PRODES since 2005, which is used at [InfoAmazonia](http://InfoAmazonia.org).
 
-You can find latest the file here:
+You can find latest the file (aprox. 180Mb) here:
 
 
 If there is a broken link or any other problem, please open an [issue](https://github.com/oeco/inpe-prodes/issues).
