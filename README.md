@@ -1,13 +1,12 @@
 # INPE Prodes data
 
-[INPE Prodes](http://www.obt.inpe.br/prodes/index.php) provides vectorial data about Amazon deforestation.
-
-Source files can be found [here](http://www.dpi.inpe.br/prodesdigital/dadosn/mosaicos).
+[INPE Prodes](http://www.obt.inpe.br/prodes/index.php) provides [vector data](http://www.dpi.inpe.br/prodesdigital/dadosn/mosaicos) about Amazon deforestation.
 
 This repository offers a Spatialite package of all deforestation vetorial data from PRODES since 2005, which is used at [InfoAmazonia](http://InfoAmazonia.org).
 
 You can find latest the file (aprox. 180Mb) here:
 
+https://dl.dropboxusercontent.com/u/3291375/ecolab/prodes.sqlite.zip
 
 If there is a broken link or any other problem, please open an [issue](https://github.com/oeco/inpe-prodes/issues).
 
