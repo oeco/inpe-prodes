@@ -11,7 +11,7 @@ delete from prodes where class_name like 'res%';
 delete from prodes where class_name like 'RES%';
 
 -- update ano field
-update prodes set ano = cast(substr(view_date,1,4) as integer) where ano is null;
+update prodes set ano = cast(substr(view_date,1,4) as integer) where ano is 0;
 
 -- round area
 update prodes set area = round(area) where area > 0;
