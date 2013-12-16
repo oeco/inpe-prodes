@@ -5,7 +5,7 @@
 wget -r -nd -A "*AMZ_shp.zip" -P data/zip http://www.dpi.inpe.br/prodesdigital/dadosn/mosaicos/
 
 # Expand them
-unzip data/zip/*.zip -d data/expanded
+unzip ./data/zip/\*.zip -d ./data/expanded
 
 # Remove unnecessary
 rm data/expanded/*Nuvem*
