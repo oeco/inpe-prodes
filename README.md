@@ -1,17 +1,18 @@
 # INPE Prodes data
 
-[INPE Prodes](http://www.obt.inpe.br/prodes/index.php) provides [vector data](http://www.dpi.inpe.br/prodesdigital/dadosn/mosaicos) about Amazon deforestation.
+This is the TileMill project for data provided by [INPE Prodes](http://www.obt.inpe.br/prodes/index.php).
 
-This repository offers a Spatialite package of all deforestation vetorial data from PRODES since 2005, which is used at [InfoAmazonia](http://InfoAmazonia.org).
+## Map install
 
-You can find latest the file (aprox. 180Mb), with data from January 2005 to September 2013, here:
+Download and expand this zip file, `cd` into its directory and and run:
 
-https://dl.dropboxusercontent.com/u/3291375/ecolab/prodes.sqlite.zip
+	./install-map.sh
 
+This will download map data and symlink to TileMill.  
 
 If there is a broken link or any other problem, please open an [issue](https://github.com/oeco/inpe-prodes/issues).
 
-## How to generate this package
+## Regenerating map data
 
 Requirements
 
@@ -19,7 +20,6 @@ Requirements
 * python
 * ogr2ogr
 * spatialite
-
 
 First, download all files by running:
 
@@ -29,4 +29,18 @@ Then:
 
     ./generate.sh
 
-This will generate the `prodes.sqlite` file, located at `data` folder.
+Be patient, this is take a while. 
+
+When it finishes, a Spatialite file will be available at `data` folder.
+
+## Other information
+
+Source files are available here:
+
+http://www.dpi.inpe.br/prodesdigital/dadosn/mosaicos
+
+If you only need the data, it can be dowloaded here:
+
+https://dl.dropboxusercontent.com/u/3291375/ecolab/prodes.sqlite.zip
+
+QGIS supports Spatilite files.
