@@ -1,4 +1,4 @@
-# INPE Prodes data
+# INPE Prodes TileMill project
 
 This is the TileMill project for data provided by [INPE Prodes](http://www.obt.inpe.br/prodes/index.php).
 
