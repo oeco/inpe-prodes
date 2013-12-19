@@ -1,5 +1,5 @@
 -- load source shapefile
-.loadshp data/prodes prodes ISO-8859-1 4326;
+.loadshp tmp/sources/prodes prodes ISO-8859-1 4326;
 
 -- create indexes
 SELECT CreateSpatialIndex('prodes', 'geometry');
