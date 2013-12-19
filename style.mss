@@ -18,3 +18,4 @@
   polygon-fill:#ffd500;
 }
 
+#desm91 { polygon-pattern-file: url(img/forest_hatch.png);}
