@@ -1,12 +1,12 @@
 # INPE Prodes TileMill project
 
-This is the TileMill project for data provided by [INPE Prodes](http://www.obt.inpe.br/prodes/index.php).
+This is the TileMill project for data provided by [INPE Prodes](http://www.obt.inpe.br/prodes/index.php). This information is used in [InfoAmazonia](http://InfoAmazonia.org) to show deforestation in the Amazon Rainforest after 2005.
 
 ## Map install
 
-Download and expand this zip file, `cd` into its directory and and run:
+[Copy](https://github.com/oeco/inpe-prodes/archive/master.zip) or clone this repository locally and run:
 
-	./install-map.sh
+	./install.sh
 
 This will download map data and symlink to TileMill.  
 
@@ -19,13 +19,9 @@ Requirements
 * wget
 * python
 * ogr2ogr
-* spatialite
+* spatialite 3.1.0
 
-First, download all files by running:
-
-    ./download.sh
-
-Then:
+At your repository, run:
 
     ./generate.sh
 
@@ -43,4 +39,4 @@ If you only need the data, it can be dowloaded here:
 
 https://dl.dropboxusercontent.com/u/3291375/ecolab/prodes.sqlite.zip
 
-QGIS supports Spatilite files.
+[QGIS](www.qgis.org) supports trannsforation of Spatilite files to Shapefiles.
