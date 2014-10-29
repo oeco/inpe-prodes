@@ -17,9 +17,9 @@ If there is a broken link or any other problem, please open an [issue](https://g
 Requirements
 
 * wget
-* python
-* ogr2ogr
-* spatialite 3.1.0
+* Python
+* [GDAL](www.gdal.org)
+* Spatialite
 
 At your repository, run:
 
