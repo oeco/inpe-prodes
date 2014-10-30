@@ -18,7 +18,7 @@ Requirements
 
 * wget
 * Python
-* [GDAL](www.gdal.org)
+* [GDAL](http://www.gdal.org)
 * Spatialite
 
 At your repository, run:
