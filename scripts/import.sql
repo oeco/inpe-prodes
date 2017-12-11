@@ -1,5 +1,5 @@
 -- load source shapefile
-.loadshp tmp/sources/prodes prodes ISO-8859-1 4326;
+.loadshp ./data/prodes/prodes prodes ISO-8859-1 4326;
 
 -- create indexes
 SELECT CreateSpatialIndex('prodes', 'geometry');
@@ -29,7 +29,7 @@ delete from prodes where area = 0;
 -- where missing view_date, calculate it from julday
 update prodes set view_date = strftime('%Y-%m-%d', julianday(ano || '-01-01') + julday - 1) where length(view_date)<=2 and julday>0;
 update prodes set view_date = ano || '-01-01' where length(view_date)<=2 and julday=0;
-	
+
 -- update year, month and day fields
 update prodes set year = strftime('%Y', view_date), month = strftime('%m', view_date), day = strftime('%d', view_date);
 

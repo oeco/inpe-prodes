@@ -40,7 +40,8 @@
       "id": "desm91",
       "class": "",
       "Datasource": {
-        "file": "../inpe-prodes/data/desmatamento-1976_91/desm91.shp"
+        "type": "shape",
+        "file": "./data/desmatamento-1976_91/desm91.shp"
       },
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
@@ -57,7 +58,7 @@
       ],
       "Datasource": {
         "type": "sqlite",
-        "file": "../inpe-prodes/data/prodes.sqlite",
+        "file": "./data/prodes.sqlite",
         "table": "prodes",
         "attachdb": "",
         "extent": ""
